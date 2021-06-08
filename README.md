@@ -1,8 +1,10 @@
 # A simple Portfolio App
 
 ## Demo
-Live Demo | Note
-------|-----
-![2021-06-08 17-56-53](https://user-images.githubusercontent.com/57913645/121185399-a639aa00-c883-11eb-86d1-c31b5509e74a.gif) | .................................................................................................................................................
+
+
+[mp4](https://user-images.githubusercontent.com/57913645/121186340-9d95a380-c884-11eb-93a5-5efb797f9761.mp4)
+
+
 
 😪Sorry! The demo is lagging because of some issues with my emulator... 
