@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MainMiddle extends StatelessWidget {
   @override
@@ -8,7 +9,7 @@ class MainMiddle extends StatelessWidget {
       child: Column(
         children: [
           Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Container(
                 padding: EdgeInsets.fromLTRB(0, 10, 250, 10),
@@ -34,34 +35,26 @@ class MainMiddle extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            padding: EdgeInsets.fromLTRB(200, 10, 10, 10),
-            // width: 150,
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(25),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                  Container(
-                    padding: EdgeInsets.fromLTRB(10, 10, 10, 10),
-                    // width: double.infinity,
-                    color: Colors.blue[100],
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          "Contact Me",
-                          style: TextStyle(
-                            fontSize: 18,
-                          ),
-                        ),
-                      ],
-                    ),
+          //copied button from docs
+          const SizedBox(height: 30),
+          ClipRRect(
+              borderRadius: BorderRadius.circular(20),
+              child: Stack(children: <Widget>[
+                Positioned.fill(
+                  child: Container(
+                    color: Colors.blue[200],
                   ),
-                ],
-              ),
-            ),
-          )
+                ),
+                TextButton(
+                  style: TextButton.styleFrom(
+                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    primary: Colors.black,
+                    textStyle: const TextStyle(fontSize: 20),
+                  ),
+                  onPressed: () => launch("tel://+918921277112"),
+                  child: const Text('Contact Me'),
+                )
+              ]))
         ],
       ),
     );
