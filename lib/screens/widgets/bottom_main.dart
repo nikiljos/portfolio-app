@@ -73,7 +73,7 @@ class MainBottom extends StatelessWidget {
                         primary: Colors.white,
                         textStyle: const TextStyle(fontSize: 20),
                       ),
-                      onPressed: () => launch("https://projects.nikjos.in/"),
+                      onPressed: () => launch("https://github.com/nikiljos/"),
                       child: const Text('Projects'),
                     ),
                   )

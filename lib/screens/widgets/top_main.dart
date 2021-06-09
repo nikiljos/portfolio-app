@@ -16,7 +16,7 @@ class MainTop extends StatelessWidget {
             child: ClipRRect(
               borderRadius: BorderRadius.circular(25),
               child: Image.network(
-                  'https://avatars.githubusercontent.com/u/57913645?v=4'),
+                  'https://nik-analytics.herokuapp.com/profile'),
             ),
           ),
           Container(
