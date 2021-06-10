@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
 
-class MainTop extends StatelessWidget {
+class MainTop extends StatefulWidget {
   const MainTop();
 
   @override
+  _MainTopState createState() => _MainTopState();
+}
+
+class _MainTopState extends State<MainTop> {
+  @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.fromLTRB(0, 85, 0, 0),
+      padding: EdgeInsets.fromLTRB(0, 50, 0, 0),
       width: double.infinity,
+
       // color: Colors.yellow[50],
       child: Column(
         children: [
